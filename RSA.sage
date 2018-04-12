@@ -31,6 +31,6 @@ encode_m=encode('RSA')
 encrypt_n=encrypt(encode_m,e,N)
 decrypt_n=decrypt(encrypt_n,d,N)
 decode_m=decode(decrypt_n)
-#signature=encrypt(encode_m,d,N)
-#Verify=decrypt(signature,e,N)
+signature=encrypt(encode_m,d,N)
+Verify=decrypt(signature,e,N)
 print decode_m
